@@ -15,7 +15,7 @@ export default {
    },
    async auth(context, payload) {
       const mode = payload.mode;
-      const apiKey = process.env.FIRE_URI || process.env.VUE_APP_KEY;
+      const apiKey = process.env.VUE_APP_URI || process.env.VUE_APP_KEY;
 
       let url = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${apiKey}`;
 
